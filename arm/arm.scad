@@ -6,7 +6,6 @@ width = 32;
 top();
 translate([-units, 0, units/2]) rotate([0, 180, 0]) bottom();
 
-
 module top() {
   entire();
   divots(8);
