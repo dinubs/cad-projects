@@ -5,10 +5,11 @@ joint_spacing =0.5; // some space between them?
 joint_thickness = 3; // thickness of the arms
 joint_arms = 5; // how many arms do you want?
 arm_width = 4; // actually: how much is removed from the arms Larger values will remove more
+mount_height=5;
 
 //render settings
 $fs=0.8; // def 1, 0.2 is high res
-$fa=4;//def 12, 3 is very nice
+$fa=8;//def 12, 3 is very nice
 
 module ball()
 {
@@ -30,6 +31,6 @@ difference()
 			cube([arm_width,size+joint_spacing+joint_thickness+20,size+6]);
 	}
 }
-	translate([0,0,size-2]) cylinder(r2=8,r1=8,h=5);
+	translate([0,0,size-2]) cylinder(r2=8,r1=8,h=mount_height);
 
 }
