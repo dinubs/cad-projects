@@ -1,3 +1,5 @@
+$fn = 150;
+
 translate([0, 0, 1]) {
   difference() {
     cylinder(r=43, h=8, center=true);
